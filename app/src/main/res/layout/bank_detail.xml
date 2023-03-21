@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginLeft="21dp"
+    android:layout_marginRight="21dp"
+    android:layout_marginTop="23dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Bank Name"
+        android:textSize="14dp"
+        android:textColor="#231F20"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto"
+        android:hint=" SBI125148212"
+        android:layout_marginTop="8dp"
+        android:id="@+id/bank_name"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto"
+        android:text="Address"
+        android:textSize="14dp"
+        android:layout_marginTop="23dp"
+        android:textColor="#231F20"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:fontFamily="@font/roboto"
+        android:hint=" cjvvvvvvvvnkl;kj.;poijhgfdgtgyjkl;poiuhhsdj \n mkvvvvvvvvkbn"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

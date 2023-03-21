@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/titalbar"
+        layout="@layout/titalbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/titalbar"
+        android:layout_marginBottom="120dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lin_scrol"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/titalbar"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="21dp"
+                android:orientation="horizontal"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:gravity="center_horizontal"
+                        android:text="Personal" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/curve_shap" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:gravity="center_horizontal"
+                        android:text="Company" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/curve_shap" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:gravity="center_horizontal"
+                        android:text="Director" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/curve_shap_gray_color_line" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18dp"
+                        android:gravity="center_horizontal"
+                        android:text="Document" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3.5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/curve_shap_gray_color_line" />
+                </LinearLayout>
+            </LinearLayout>
+            <include
+                android:id="@+id/account_verified"
+                layout="@layout/account_verified" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="23.76dp"
+                android:layout_marginStart="20.94dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="101dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/round_button_green"
+                    android:text="Directo 1"
+                    android:textColor="@color/white"
+                    android:textSize="14dp"
+                    android:shadowRadius="6"
+                    android:layout_marginRight="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="101dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/upload_round_border_green"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="8dp"
+                        android:text="Director 2"
+                        android:textColor="@color/new_green"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto"
+                android:text="Name"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#231F20"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="XYZ HJIKLKLMKN"
+                android:textColor="#231F20"
+                android:backgroundTint="#87F4FAF8"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto"
+                android:text="DIN"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#231F20"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="DIN16265642"
+                android:textColor="#231F20"
+                android:backgroundTint="#87F4FAF8"
+                android:layout_marginTop="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto"
+                android:text="Aadhar No."
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="@color/new_green"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/new_green"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:textSize="15dp"
+                android:hint="4568 5682 852*"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/roboto"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:layout_marginTop="23dp"
+                android:fontFamily="@font/roboto"
+                android:text="PAN"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:textColor="#231F20"/>
+            <androidx.appcompat.widget.AppCompatEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="21dp"
+                android:layout_marginRight="21dp"
+                android:textSize="15dp"
+                android:fontFamily="@font/roboto"
+                android:hint="BR2632845*"
+                android:textColor="#231F20"
+                android:backgroundTint="#87F4FAF8"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:text=" Save &amp; Proceed"
+        android:backgroundTint="@color/new_green"
+        android:textSize="16dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="52dp"
+        android:layout_gravity="bottom"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

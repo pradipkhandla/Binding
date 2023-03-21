@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/titalbar"
+            layout="@layout/titalbar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/titalbar"
+            android:layout_marginBottom="120dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:id="@+id/lin_scrol"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/titalbar"
+                    android:layout_marginStart="21dp"
+                    android:layout_marginEnd="21dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="Personal" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/curve_shap" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="Company" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/curve_shap" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="Director" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/curve_shap_gray_color_line" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="48dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:gravity="center_horizontal"
+                            android:text="Document" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="3.5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/curve_shap_gray_color_line" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/account_verified"
+                    layout="@layout/account_verified" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginBottom="6dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Boxnbiz Technologies Pvt Ltd"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:textColor="#231F20" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="GSTIN: 27ATJPB1465C***"
+                    android:textSize="14dp"
+                    android:textColor="#656263" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="Bank Account No."
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/new_green" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/new_green"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:textSize="15dp"
+                    android:hint="4582 4559 5259"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/roboto" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="IFSC"
+                    android:textSize="14dp"
+                    android:textColor="#231F20"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:layout_marginRight="21dp"
+                    android:textSize="15dp"
+                    android:fontFamily="@font/roboto"
+                    android:hint=" SBI125148212"
+                    android:layout_marginTop="8dp" />
+
+                <include
+                    android:id="@+id/bank_detail"
+                    layout="@layout/bank_detail" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text=" Save &amp; Proceed"
+            android:backgroundTint="@color/new_green"
+            android:textSize="16dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="52dp"
+            android:layout_gravity="bottom"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</layout>
