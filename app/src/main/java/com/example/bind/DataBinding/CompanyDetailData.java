@@ -10,6 +10,16 @@ public class CompanyDetailData extends BaseObservable {
     private String bankName,address;
     private int accountNo,ifscCode;
 
+    public CompanyDetailData() {
+    }
+
+    public CompanyDetailData(String bankName, String address, int accountNo, int ifscCode) {
+        this.bankName = bankName;
+        this.address = address;
+        this.accountNo = accountNo;
+        this.ifscCode = ifscCode;
+    }
+
     @Bindable
     public String getBankName() {
         return bankName;
